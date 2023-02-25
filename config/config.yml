@@ -1,0 +1,23 @@
+logfile: logs.txt
+debug: false
+
+http:
+  opt:
+    ssl: false
+    auth: false
+    gs: true
+  port:
+    def: 80
+    ssl: 443
+  path:
+    cert: ../SSL/cert.pem
+    key:  ../SSL/key.pem
+
+database:
+  user: mkdr
+  password: 
+  database_name: hex
+  table_name:
+    crypto_data: public.cryptocurrencies
+    payments:    public.payments
+    api_keys:    public.api_keys
